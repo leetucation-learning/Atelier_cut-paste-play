@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CUT. PASTE. PLAY. · Atelier de creație digitală</title>
+<meta name="description" content="Cum transformăm fotografii în clipuri-colaj de 15 secunde: colajul, mișcarea, brief-ul și editorul video, pas cu pas, pe timeline.">
+<meta name="author" content="LEETUCATION SRL">
+<meta name="theme-color" content="#181918">
+<link rel="icon" type="image/png" href="media/brand/favicon-192.png">
+<link rel="apple-touch-icon" href="media/brand/favicon-180.png">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/player.css">
+<link rel="stylesheet" href="css/slides.css">
+</head>
+<body>
+<div class="app" id="app">
+  <main class="stage is-cover" id="stage" aria-label="Atelierul CUT. PASTE. PLAY.">
+    <div class="chrome" id="chrome"></div>
+    <section class="slide" id="slide" aria-live="off"></section>
+    <nav class="snav" id="snav" aria-label="Navigare între slide-uri" hidden></nav>
+    <div class="intro" id="intro">
+      <video id="introVideo" src="media/brand/cp-logo-animat.mp4" muted playsinline preload="auto" aria-label="Finanțat de Municipiul Timișoara prin Centrul de Proiecte"></video>
+      <button class="btn skip" id="skipIntro" type="button">Sari peste</button>
+    </div>
+  </main>
+  <div class="cc is-off" id="cc" aria-hidden="true"><span></span></div>
+  <nav class="bar" id="bar" aria-label="Controalele atelierului"></nav>
+  <p class="sr-only" id="live" aria-live="polite"></p>
+</div>
+<div class="rotate" id="rotate" role="dialog" aria-label="Întoarce telefonul">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="7" width="18" height="10"/><path d="M7 3.5h4M17.5 3.5a3 3 0 0 1 3 3"/><path d="M19 5l1.5 1.5L22 5"/></svg>
+  <p>Atelierul e făcut pentru ecran lat. Întoarce telefonul sau deschide-l pe calculator.</p>
+  <button id="rotOk" type="button">Continuă așa</button>
+</div>
+<noscript><p style="color:#fff;font:20px Arial,sans-serif;padding:40px">Atelierul are nevoie de JavaScript. Deschide-l într-un browser actual (Chrome, Edge, Firefox sau Safari).</p></noscript>
+<script src="js/config.js"></script>
+<script src="audio/vo.js"></script>
+<script src="js/scorm_api.js"></script>
+<script src="js/slides.js"></script>
+<script src="js/extras.js"></script>
+<script src="js/player.js"></script>
+</body>
+</html>
